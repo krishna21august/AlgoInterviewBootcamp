@@ -41,17 +41,17 @@ function steps(n, row = 0, stair = "") {
 module.exports = steps;
 
 //
-// function steps(n) {
-//   for (let row = 0; row < n; row++) {
-//     let stair = "";
-//     for (let column = 0; column < n; column++) {
-//       if (column > row) {
-//         stair += " ";
-//       } else {
-//         stair += "#";
-//       }
-//     }
+function steps(n) {
+  for (let row = 0; row < n; row++) {
+    let stair = "";
+    for (let column = 0; column < n; column++) {
+      if (column > row) {
+        stair += " ";
+      } else {
+        stair += "#";
+      }
+    }
 
-//     console.log(stair);
-//   }
-// }
+    console.log(stair);
+  }
+}
