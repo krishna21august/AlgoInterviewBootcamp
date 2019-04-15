@@ -29,6 +29,18 @@ class Node {
       this.right = new Node(data);
     }
   }
+
+  contains(data) {
+    if (this.data == data) {
+      return this;
+    }
+
+    if (this.data < data && this.right) {
+      this.right.contains(data);
+    } else if (this.data > data && this.left) {
+      this.left.contains(data);
+    }
+  }
 }
 
 // const newNode = new Node(10);
